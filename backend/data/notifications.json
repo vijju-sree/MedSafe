@@ -1,0 +1,420 @@
+[
+  {
+    "id": "notif-1",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "MEDICATION_REMINDER",
+    "title": "Medication Time Approaching",
+    "message": "Your evening dose of Paracetamol 500 mg is scheduled at 21:00.",
+    "category": "USER",
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T15:00:00Z"
+  },
+  {
+    "id": "notif-2",
+    "recipientId": "usr-car-1",
+    "recipientRole": "CAREGIVER",
+    "patientId": "PAT10001",
+    "type": "CAREGIVER_ALERT",
+    "title": "Caregiver Update: Late Dose Logged",
+    "message": "Anjali took Metformin 500 mg 26 minutes past scheduled time today.",
+    "category": "USER",
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T13:30:00Z"
+  },
+  {
+    "id": "notif-3",
+    "recipientId": "usr-doc-1",
+    "recipientRole": "DOCTOR",
+    "patientId": "PAT10001",
+    "type": "SAFETY_ALERT",
+    "title": "Safety Signal: Possible Duplicate Formulation",
+    "message": "Potential duplicate active ingredient detected for patient PAT10001 (Paracetamol + Crocin). Professional review recommended.",
+    "category": "USER",
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-09"
+  },
+  {
+    "id": "notif-4",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "PRESCRIPTION_CREATED",
+    "title": "New Prescription Issued: RX10001",
+    "message": "Dr. Ravi Kumar has issued an active prescription covering Metformin and Paracetamol.",
+    "category": "USER",
+    "readStatus": true,
+    "isRead": true,
+    "readAt": "2026-09-08",
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-08"
+  },
+  {
+    "id": "sys-disp-1",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "SYSTEM_MAINTENANCE",
+    "title": "Scheduled Platform Maintenance Notice",
+    "message": "Routine cloud database maintenance is scheduled for Sunday 02:00 AM – 03:30 AM IST. All emergency contact lines and offline medication logs remain active.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T06:00:00Z"
+  },
+  {
+    "id": "sys-disp-2",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "SYSTEM_ALERT",
+    "title": "Advisory: Clinical Safety & Refill Policy Update",
+    "message": "MedSafe Phase 2 clinical safety validation has activated automated duplicate-ingredient checks and ABDM-compliant consent governance.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-09"
+  },
+  {
+    "id": "sys-disp-3",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "PLATFORM_FEATURE",
+    "title": "Platform Feature: Sandbox Digital Checkout Live",
+    "message": "Instant UPI and simulated card payments for investigation lab fees are now active in sandbox mode on your Patient Portal.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": true,
+    "isRead": true,
+    "readAt": "2026-09-07",
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-07"
+  },
+  {
+    "id": "notif-226e1052",
+    "recipientId": "usr-adm-1",
+    "recipientRole": "ADMIN",
+    "patientId": "",
+    "type": "VERIFICATION_STATUS",
+    "title": "New DOCTOR Registration: Dr. Arjun Reddy",
+    "message": "Dr. Arjun Reddy has registered as a DOCTOR (License: DOC-KA-998877). Verification is PENDING.",
+    "metadata": {
+      "userId": "usr-doctor-1789068399551",
+      "role": "DOCTOR",
+      "verificationStatus": "PENDING"
+    },
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:39.551Z"
+  },
+  {
+    "id": "notif-cr-a0031842",
+    "recipientId": "usr-doc-1",
+    "recipientRole": "DOCTOR",
+    "patientId": "PAT10001",
+    "type": "FOLLOW_UP",
+    "title": "New Consultation Request: Anjali Sharma",
+    "message": "Patient Anjali Sharma (PAT10001) has requested a consultation with you at ABC Hospital.",
+    "metadata": {
+      "consultationRequestId": "cr-f9c3b0dd"
+    },
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:39.745Z"
+  },
+  {
+    "id": "notif-cr-rec-20585341",
+    "recipientId": "usr-rec-1",
+    "recipientRole": "RECEPTIONIST",
+    "patientId": "PAT10001",
+    "type": "FOLLOW_UP",
+    "title": "New Patient Request: Anjali Sharma",
+    "message": "Patient Anjali Sharma (PAT10001) requested Dr. Dr. Ravi Kumar, MD at ABC Hospital. Action required.",
+    "metadata": {
+      "consultationRequestId": "cr-f9c3b0dd",
+      "requestId": "REQ-85431"
+    },
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:39.745Z"
+  },
+  {
+    "id": "notif-doc-linked-fcfbe7c3",
+    "recipientId": "usr-doc-1",
+    "recipientRole": "DOCTOR",
+    "patientId": "PAT10001",
+    "type": "FOLLOW_UP",
+    "title": "New Patient Added: Anjali Sharma",
+    "message": "New patient Anjali Sharma has been approved and added to your patient list by Priya Sharma.",
+    "metadata": {
+      "patientId": "PAT10001",
+      "consultationRequestId": "cr-f9c3b0dd"
+    },
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:39.759Z"
+  },
+  {
+    "id": "notif-pat-acc-46cc9792",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "FOLLOW_UP",
+    "title": "Consultation Request Accepted! 🎉",
+    "message": "Your request to consult Dr. Dr. Ravi Kumar, MD at ABC Hospital has been accepted. You are now connected.",
+    "metadata": {
+      "consultationRequestId": "cr-f9c3b0dd",
+      "hospitalId": "HOSP-00125",
+      "doctorId": "DOC10001"
+    },
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:39.759Z"
+  },
+  {
+    "id": "notif-pat-reg-f0b330f2",
+    "recipientId": "usr-pat-2",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10002",
+    "type": "FOLLOW_UP",
+    "title": "Registered with ABC Hospital",
+    "message": "You have been added to ABC Hospital by reception.",
+    "metadata": {
+      "hospitalId": "HOSP-00125"
+    },
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:39.783Z"
+  },
+  {
+    "id": "notif-85b13361",
+    "patientId": "PAT10001",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "type": "PLATFORM_FEATURE",
+    "title": "Subscription Activated",
+    "message": "Premium Patient Care subscription activated successfully.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:44.311Z"
+  },
+  {
+    "id": "notif-1ff2b701",
+    "patientId": "PAT10001",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "type": "PLATFORM_FEATURE",
+    "title": "Subscription Activated",
+    "message": "Family Plus subscription activated successfully.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:44.335Z"
+  },
+  {
+    "id": "notif-3ce4ce8c",
+    "patientId": "PAT10001",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "type": "PLATFORM_FEATURE",
+    "title": "Payment Successful",
+    "message": "Payment successful for Lipid Profile (Cholesterol & Triglycerides) - Blood Pathology. Bill BIL10003 is now paid.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:44.358Z"
+  },
+  {
+    "id": "notif-refill-due-221948ab",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "REFILL_DUE",
+    "title": "Refill Due: Metformin 500 mg",
+    "message": "Your supply of Metformin 500 mg is low (10 doses remaining, ~5 days). Please request a refill.",
+    "category": "USER",
+    "metadata": {
+      "medicationId": "med-2",
+      "prescriptionId": "RX10001"
+    },
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:45.421Z"
+  },
+  {
+    "id": "notif-refill-due-3e5ccb97",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "REFILL_DUE",
+    "title": "Refill Due: Atorvastatin 20 mg",
+    "message": "Your supply of Atorvastatin 20 mg is low (4 doses remaining, ~4 days). Please request a refill.",
+    "category": "USER",
+    "metadata": {
+      "medicationId": "med-3",
+      "prescriptionId": "RX10001"
+    },
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:45.421Z"
+  },
+  {
+    "id": "notif-refill-due-209a619e",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "REFILL_DUE",
+    "title": "Refill Due: Crocin Pain Relief 500 mg",
+    "message": "Your supply of Crocin Pain Relief 500 mg is low (1 doses remaining, ~1 days). Please request a refill.",
+    "category": "USER",
+    "metadata": {
+      "medicationId": "med-5",
+      "prescriptionId": "RX10001"
+    },
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:45.449Z"
+  },
+  {
+    "id": "notif-rx-efb2b8d6",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "NEW_PRESCRIPTION",
+    "title": "New Prescription #RX79744",
+    "message": "Dr. Dr. Ravi Kumar issued Prescription #RX79744 containing 2 medication(s).",
+    "category": "USER",
+    "metadata": {
+      "prescriptionId": "RX79744"
+    },
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:53.868Z"
+  },
+  {
+    "id": "notif-refill-req-90a6cf81",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "REFILL_REQUESTED",
+    "title": "Refill Requested: Amlodipine Besylate",
+    "message": "Your refill request #RFL82333 for Amlodipine Besylate (30 doses) has been submitted to Dr. Dr. Ravi Kumar and pharmacy.",
+    "category": "USER",
+    "metadata": {
+      "refillRequestId": "RFL82333",
+      "medicationId": "med-0e8c4f6c"
+    },
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:53.896Z"
+  },
+  {
+    "id": "notif-doc-rfl-475212b7",
+    "recipientId": "usr-doc-1",
+    "recipientRole": "DOCTOR",
+    "patientId": "PAT10001",
+    "type": "REFILL_REQUESTED",
+    "title": "Refill Requested by Anjali Sharma",
+    "message": "Anjali Sharma submitted Refill Request #RFL82333 for Amlodipine Besylate (30 doses).",
+    "category": "USER",
+    "metadata": {
+      "refillRequestId": "RFL82333",
+      "patientId": "PAT10001",
+      "medicationId": "med-0e8c4f6c"
+    },
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:53.896Z"
+  },
+  {
+    "id": "notif-rfl-status-0f6fc4df",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "REFILL_STATUS_CHANGED",
+    "title": "Refill Request COMPLETED: Amlodipine Besylate 500 mg",
+    "message": "Your refill request #RFL82333 for Amlodipine Besylate 500 mg is now marked as COMPLETED.",
+    "category": "USER",
+    "metadata": {
+      "refillRequestId": "RFL82333",
+      "status": "COMPLETED"
+    },
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:26:53.919Z"
+  },
+  {
+    "id": "notif-sub-e57d8ce6",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "patientId": "PAT10001",
+    "type": "PAYMENT_RECEIVED",
+    "title": "Subscription Activated: Free Patient Plan",
+    "message": "Your Free Patient Plan has been activated successfully until 2026-10-10.",
+    "category": "USER",
+    "metadata": {
+      "subscriptionId": "SUB73368",
+      "planId": "PLAN_FREE"
+    },
+    "readStatus": false,
+    "isRead": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:34:07.992Z"
+  },
+  {
+    "id": "notif-106188a6",
+    "patientId": "PAT10001",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "type": "PLATFORM_FEATURE",
+    "title": "Subscription Activated",
+    "message": "Premium Patient Care subscription activated successfully.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:42:37.623Z"
+  },
+  {
+    "id": "notif-e51f7404",
+    "patientId": "PAT10001",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "type": "PLATFORM_FEATURE",
+    "title": "Subscription Activated",
+    "message": "Family Plus subscription activated successfully.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:42:37.648Z"
+  },
+  {
+    "id": "notif-d25e73f7",
+    "patientId": "PAT10001",
+    "recipientId": "usr-pat-1",
+    "recipientRole": "PATIENT",
+    "type": "PLATFORM_FEATURE",
+    "title": "Payment Successful",
+    "message": "Payment successful for Chest X-Ray (PA View) - Diagnostic Radiology. Bill BIL10002 is now paid.",
+    "category": "SYSTEM_DISPATCH",
+    "readStatus": false,
+    "deliveryStatus": "DELIVERED",
+    "createdAt": "2026-09-10T19:42:37.671Z"
+  }
+]

@@ -1,0 +1,42 @@
+version: '3.8'
+
+# ==============================================================================
+# MedSafe Standalone Flask + SQLite Docker Compose
+# ==============================================================================
+
+services:
+  medsafe-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medsafe-flask-backend
+    restart: unless-stopped
+    ports:
+      - "${PORT:-5000}:5000"
+    env_file:
+      - path: ./.env
+        required: false
+    environment:
+      - FLASK_ENV=production
+      - PORT=5000
+      - MEDSAFE_DB_PATH=/app/data/medsafe.db
+      - RAZORPAY_MODE=${RAZORPAY_MODE:-TEST}
+      - RAZORPAY_TEST_KEY_ID=${RAZORPAY_TEST_KEY_ID:-rzp_test_MedSafeDemoKey123}
+      - RAZORPAY_TEST_KEY_SECRET=${RAZORPAY_TEST_KEY_SECRET:-MedSafeSecretKey2026TestMode}
+      - RAZORPAY_LIVE_KEY_ID=${RAZORPAY_LIVE_KEY_ID:-}
+      - RAZORPAY_LIVE_KEY_SECRET=${RAZORPAY_LIVE_KEY_SECRET:-}
+      - RAZORPAY_WEBHOOK_SECRET=${RAZORPAY_WEBHOOK_SECRET:-MedSafeWebhookSecret2026}
+      - RAZORPAY_AUTO_CAPTURE=${RAZORPAY_AUTO_CAPTURE:-true}
+    volumes:
+      - medsafe_data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  medsafe_data:
+    name: medsafe_data
+    driver: local

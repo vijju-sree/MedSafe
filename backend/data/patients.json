@@ -1,0 +1,73 @@
+[
+  {
+    "id": "pat-1",
+    "patientId": "PAT10001",
+    "userId": "usr-pat-1",
+    "name": "Anjali Sharma",
+    "dob": "1988-06-15",
+    "gender": "FEMALE",
+    "email": "anjali@medsafe.local",
+    "phone": "+91 98765 43210",
+    "address": "Flat 402, Green Meadows Apt, Madhapur, Hyderabad",
+    "emergencyContact": {
+      "name": "Vikram Sharma",
+      "relationship": "Spouse",
+      "phone": "+91 98765 43219"
+    },
+    "organizationId": "org-1",
+    "clinicId": "clin-1",
+    "registeredDate": "2026-07-12",
+    "caregiverIds": [
+      "car-1"
+    ],
+    "doctorIds": [
+      "DOC10001"
+    ],
+    "clinicIds": [
+      "clin-1",
+      "HOSP-00125"
+    ]
+  },
+  {
+    "id": "pat-2",
+    "patientId": "PAT10002",
+    "userId": "usr-pat-2",
+    "name": "Vikram Singh",
+    "dob": "1975-03-20",
+    "gender": "MALE",
+    "email": "vikram@medsafe.local",
+    "phone": "+91 98765 43212",
+    "address": "Banjara Hills, Road 12, Hyderabad",
+    "emergencyContact": {
+      "name": "Sunita Singh",
+      "relationship": "Spouse",
+      "phone": "+91 98765 43213"
+    },
+    "registeredDate": "2026-08-31",
+    "caregiverIds": [],
+    "doctorIds": [],
+    "clinicIds": [
+      "HOSP-00125"
+    ]
+  },
+  {
+    "id": "pat-3",
+    "patientId": "PAT10005",
+    "userId": "usr-pat-3",
+    "name": "Kavita Reddy",
+    "dob": "1992-11-04",
+    "gender": "FEMALE",
+    "email": "kavita@medsafe.local",
+    "phone": "+91 98765 88990",
+    "address": "Kondapur, Silicon Valley, Hyderabad",
+    "emergencyContact": {
+      "name": "Rajesh Reddy",
+      "relationship": "Brother",
+      "phone": "+91 98765 88991"
+    },
+    "registeredDate": "2026-09-05",
+    "caregiverIds": [],
+    "doctorIds": [],
+    "clinicIds": []
+  }
+]

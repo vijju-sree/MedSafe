@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pha-1",
+    "pharmacistId": "PHA10001",
+    "userId": "usr-pha-1",
+    "name": "Suresh Reddy, RPh",
+    "email": "suresh@medsafe.local",
+    "phone": "+91 99887 76655",
+    "pharmacyName": "Apollo Med Pharmacy #4",
+    "organizationId": "org-3",
+    "licenseNumber": "PHARM-TS-9921",
+    "authorizedPatientIds": [
+      "PAT10001"
+    ]
+  },
+  {
+    "id": "pha-2",
+    "pharmacistId": "PHA10002",
+    "userId": "usr-ppharm-1",
+    "name": "Sunita Rao, BPharm",
+    "email": "pending.pharm@medsafe.local",
+    "phone": "+91 98901 23456",
+    "pharmacyName": "Rao Community Healthcare Pharmacy",
+    "organizationId": "org-2",
+    "licenseNumber": "PHARM-PEND-4412",
+    "verificationStatus": "PENDING",
+    "authorizedPatientIds": []
+  }
+]

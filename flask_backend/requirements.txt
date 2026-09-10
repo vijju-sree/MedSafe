@@ -1,0 +1,7 @@
+Flask==3.0.2
+Flask-Cors==4.0.0
+razorpay==1.4.1
+python-dotenv==1.0.1
+Werkzeug==3.0.1
+gunicorn==21.2.0
+waitress==3.0.0

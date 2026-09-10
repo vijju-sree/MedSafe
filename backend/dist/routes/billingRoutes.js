@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const billingController_1 = require("../controllers/billingController");
+const auth_1 = require("../middleware/auth");
+const audit_1 = require("../middleware/audit");
+const router = (0, express_1.Router)();
+router.get('/patient/:patientId', auth_1.authMiddleware, billingController_1.billingController.getPatientBills);
+router.get('/receipt/:id', auth_1.authMiddleware, billingController_1.billingController.getReceipt);
+router.get('/:id', auth_1.authMiddleware, billingController_1.billingController.getBillById);
+router.post('/:id/pay', auth_1.authMiddleware, (0, audit_1.logAudit)('BILL_PAID', 'Bill'), billingController_1.billingController.payBill);
+router.get('/', auth_1.authMiddleware, billingController_1.billingController.getAllBills);
+exports.default = router;

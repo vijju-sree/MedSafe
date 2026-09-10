@@ -1,0 +1,61 @@
+[
+  {
+    "id": "rfl-1",
+    "refillRequestId": "RFL10001",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "medicationId": "med-3",
+    "medicationName": "Atorvastatin 20 mg",
+    "prescriptionId": "RX10001",
+    "doctorId": "DOC10001",
+    "doctorName": "Dr. Ravi Kumar, MD",
+    "pharmacyName": "MedSafe Central Pharmacy",
+    "quantityRequested": 30,
+    "status": "REQUESTED",
+    "notes": "Patient submitted monthly refill. 4 doses remaining in active supply.",
+    "statusHistory": [
+      {
+        "status": "REQUESTED",
+        "changedBy": "usr-pat-1",
+        "changedByRole": "PATIENT",
+        "timestamp": "2026-09-09T09:30:00Z",
+        "notes": "Refill requested via patient portal"
+      }
+    ],
+    "requestedDate": "2026-09-09",
+    "updatedAt": "2026-09-09"
+  },
+  {
+    "id": "rfl-a593519a",
+    "refillRequestId": "RFL82333",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "medicationId": "med-0e8c4f6c",
+    "medicationName": "Amlodipine Besylate 500 mg",
+    "prescriptionId": "RX79744",
+    "doctorId": "DOC10001",
+    "doctorName": "Dr. Ravi Kumar",
+    "pharmacyName": "MedSafe Central Pharmacy Network",
+    "quantityRequested": 30,
+    "status": "COMPLETED",
+    "notes": "Running low on morning blood pressure tablets. Requesting 30-day refill.",
+    "statusHistory": [
+      {
+        "status": "REQUESTED",
+        "changedBy": "usr-pat-1",
+        "changedByRole": "PATIENT",
+        "timestamp": "2026-09-10T19:26:53.896Z",
+        "notes": "Running low on morning blood pressure tablets. Requesting 30-day refill."
+      },
+      {
+        "status": "COMPLETED",
+        "changedBy": "usr-doc-1",
+        "changedByRole": "DOCTOR",
+        "timestamp": "2026-09-10T19:26:53.919Z",
+        "notes": "Refill approved and 30 units dispensed at pharmacy counter."
+      }
+    ],
+    "requestedDate": "2026-09-10",
+    "updatedAt": "2026-09-10T19:26:53.919Z"
+  }
+]

@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const pharmacistController_1 = require("../controllers/pharmacistController");
+const auth_1 = require("../middleware/auth");
+const rbac_1 = require("../middleware/rbac");
+const audit_1 = require("../middleware/audit");
+const router = (0, express_1.Router)();
+router.use(auth_1.authMiddleware);
+router.use((0, rbac_1.requireRoles)('PHARMACIST', 'ADMIN'));
+router.get('/queue', pharmacistController_1.pharmacistController.getRefillQueue);
+router.post('/refill', (0, audit_1.logAudit)('PHARMACY_REFILL_RECORDED', 'Medication'), pharmacistController_1.pharmacistController.recordRefill);
+router.post('/notes', (0, audit_1.logAudit)('PHARMACY_NOTE_ADDED', 'FollowUpAction'), pharmacistController_1.pharmacistController.addReviewNotes);
+exports.default = router;

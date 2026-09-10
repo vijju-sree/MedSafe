@@ -1,0 +1,89 @@
+[
+  {
+    "id": "alert-1",
+    "patientId": "PAT10001",
+    "alertType": "DUPLICATE_MEDICATION",
+    "severity": "WARNING",
+    "title": "Possible Duplicate Medication Record",
+    "description": "Patient has active records for \"Paracetamol 500 mg\" and \"Crocin Pain Relief 500 mg\", which share the identical active ingredient Paracetamol / Acetaminophen.",
+    "recommendation": "Possible concern detected — professional review recommended. Please verify with Dr. Ravi Kumar or the dispensing pharmacist whether both formulations were intended.",
+    "disclaimer": "This is a safety-support signal, not a medical diagnosis. Please consult your doctor/pharmacist before making medication changes.",
+    "medicationIds": [
+      "med-1",
+      "med-5"
+    ],
+    "acknowledged": false,
+    "createdAt": "2026-09-09"
+  },
+  {
+    "id": "alert-2",
+    "patientId": "PAT10001",
+    "alertType": "EXPIRED_PRESCRIPTION",
+    "severity": "INFO",
+    "title": "Prescription Renewal Approaching",
+    "description": "Prescription RX10002 for Atorvastatin 20 mg will expire in 5 days on 2026-09-15.",
+    "recommendation": "Schedule a follow-up consultation with your prescribing clinician to review continuation or renewal.",
+    "disclaimer": "This is a safety-support signal, not a medical diagnosis. Please consult your doctor/pharmacist before making medication changes.",
+    "medicationIds": [
+      "med-4"
+    ],
+    "acknowledged": false,
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "alert-dup-a2ce43fe",
+    "patientId": "PAT10001",
+    "alertType": "DUPLICATE_MEDICATION",
+    "severity": "WARNING",
+    "title": "Possible Duplicate Medication Record: Paracetamol & Crocin Pain Relief",
+    "description": "Active records detected for \"Paracetamol\" and \"Crocin Pain Relief\" sharing generic formulation \"Paracetamol / Acetaminophen\".",
+    "recommendation": "Possible concern detected — professional review recommended. Please confirm with your prescribing clinician or pharmacist whether dual therapy was intended.",
+    "disclaimer": "This is a safety-support signal, not a medical diagnosis. Please consult your doctor/pharmacist before making medication changes.",
+    "medicationIds": [
+      "med-1",
+      "med-5"
+    ],
+    "acknowledged": false,
+    "createdAt": "2026-09-10T19:26:45.378Z"
+  },
+  {
+    "id": "alert-rx-near-rx-2",
+    "patientId": "PAT10001",
+    "alertType": "EXPIRED_PRESCRIPTION",
+    "severity": "INFO",
+    "title": "Prescription Renewal Due: RX10002",
+    "description": "Prescription RX10002 will expire in 5 day(s) on 2026-09-15.",
+    "recommendation": "Prescription renewal reminder: contact your healthcare professional to secure an updated refill authorization.",
+    "disclaimer": "This is a safety-support signal, not a medical diagnosis. Please consult your doctor/pharmacist before making medication changes.",
+    "acknowledged": false,
+    "createdAt": "2026-09-10T19:26:45.378Z"
+  },
+  {
+    "id": "alert-rx-exp-rx-old",
+    "patientId": "PAT10001",
+    "alertType": "EXPIRED_PRESCRIPTION",
+    "severity": "CRITICAL",
+    "title": "Expired Prescription: RX10000",
+    "description": "Prescription RX10000 issued by Dr. Dr. Ravi Kumar, MD expired 30 day(s) ago on 2026-08-11.",
+    "recommendation": "Prescription appears to be expired. Contact your healthcare provider immediately to review continuing therapy.",
+    "disclaimer": "This is a safety-support signal, not a medical diagnosis. Please consult your doctor/pharmacist before making medication changes.",
+    "acknowledged": false,
+    "createdAt": "2026-09-10T19:26:45.378Z"
+  },
+  {
+    "id": "alert-dup-d51bebb2",
+    "patientId": "PAT10001",
+    "alertType": "DUPLICATE_MEDICATION",
+    "severity": "WARNING",
+    "title": "Possible Duplicate Medication Record: Atorvastatin & Atorvastatin Calcium",
+    "description": "Active records detected for \"Atorvastatin\" and \"Atorvastatin Calcium\" sharing generic formulation \"Atorvastatin Calcium\".",
+    "recommendation": "Possible concern detected — professional review recommended. Please confirm with your prescribing clinician or pharmacist whether dual therapy was intended.",
+    "disclaimer": "This is a safety-support signal, not a medical diagnosis. Please consult your doctor/pharmacist before making medication changes.",
+    "medicationIds": [
+      "med-4",
+      "med-30712300"
+    ],
+    "acknowledged": false,
+    "createdAt": "2026-09-10T19:26:53.884Z"
+  }
+]

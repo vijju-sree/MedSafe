@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const adherenceController_1 = require("../controllers/adherenceController");
+const auth_1 = require("../middleware/auth");
+const audit_1 = require("../middleware/audit");
+const router = (0, express_1.Router)();
+router.use(auth_1.authMiddleware);
+router.post('/taken', (0, audit_1.logAudit)('DOSE_TAKEN_RECORDED', 'MedicationSchedule'), adherenceController_1.adherenceController.recordTaken);
+router.post('/missed', (0, audit_1.logAudit)('DOSE_MISSED_RECORDED', 'MedicationSchedule'), adherenceController_1.adherenceController.recordMissed);
+router.post('/skipped', (0, audit_1.logAudit)('DOSE_SKIPPED_RECORDED', 'MedicationSchedule'), adherenceController_1.adherenceController.recordSkipped);
+router.post('/record-skipped', (0, audit_1.logAudit)('DOSE_SKIPPED_RECORDED', 'MedicationSchedule'), adherenceController_1.adherenceController.recordSkipped);
+router.get('/:patientId', adherenceController_1.adherenceController.getAnalytics);
+exports.default = router;

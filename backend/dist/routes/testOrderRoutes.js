@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const testOrderController_1 = require("../controllers/testOrderController");
+const auth_1 = require("../middleware/auth");
+const audit_1 = require("../middleware/audit");
+const router = (0, express_1.Router)();
+router.get('/catalogue', auth_1.authMiddleware, testOrderController_1.testOrderController.getCatalogue);
+router.post('/', auth_1.authMiddleware, (0, audit_1.logAudit)('TEST_ORDER_CREATED', 'TestOrder'), testOrderController_1.testOrderController.createOrder);
+router.get('/', auth_1.authMiddleware, testOrderController_1.testOrderController.getAllOrders);
+router.get('/patient/:patientId', auth_1.authMiddleware, testOrderController_1.testOrderController.getPatientOrders);
+router.get('/:id', auth_1.authMiddleware, testOrderController_1.testOrderController.getOrderById);
+router.put('/:id/sample', auth_1.authMiddleware, (0, audit_1.logAudit)('SAMPLE_COLLECTED', 'TestOrder'), testOrderController_1.testOrderController.collectSample);
+router.put('/:id/status', auth_1.authMiddleware, (0, audit_1.logAudit)('TEST_STATUS_UPDATED', 'TestOrder'), testOrderController_1.testOrderController.updateStatus);
+exports.default = router;

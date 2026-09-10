@@ -1,0 +1,40 @@
+# ==============================================================================
+# MedSafe Render Blueprint (One-Click Deploy)
+# Includes persistent disk for SQLite database retention across deploys
+# ==============================================================================
+services:
+  - type: web
+    name: medsafe-flask-backend
+    runtime: python
+    region: oregon
+    plan: starter
+    buildCommand: pip install -r flask_backend/requirements.txt
+    startCommand: cd flask_backend && gunicorn --config gunicorn.conf.py app:app
+    healthCheckPath: /health
+    disk:
+      name: medsafe-sqlite-disk
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: MEDSAFE_DB_PATH
+        value: /app/data/medsafe.db
+      - key: RAZORPAY_MODE
+        sync: false
+        value: TEST
+      - key: RAZORPAY_TEST_KEY_ID
+        sync: false
+        value: rzp_test_MedSafeDemoKey123
+      - key: RAZORPAY_TEST_KEY_SECRET
+        sync: false
+        value: MedSafeSecretKey2026TestMode
+      - key: RAZORPAY_LIVE_KEY_ID
+        sync: false
+      - key: RAZORPAY_LIVE_KEY_SECRET
+        sync: false
+      - key: RAZORPAY_WEBHOOK_SECRET
+        sync: false
+        value: MedSafeWebhookSecret2026
+      - key: RAZORPAY_AUTO_CAPTURE
+        value: "true"

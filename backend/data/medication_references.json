@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ref-1",
+    "drugName": "Paracetamol",
+    "genericName": "Acetaminophen",
+    "category": "Analgesic / Antipyretic",
+    "standardDosageRange": "500 mg - 1000 mg every 4-6 hours (max 4000 mg/day)",
+    "commonInstructions": "Take with plenty of water after food.",
+    "conflictingDrugs": [
+      "Warfarin",
+      "Isoniazid",
+      "Alcohol"
+    ],
+    "contraindications": "Severe hepatic impairment, acute active liver disease."
+  },
+  {
+    "id": "ref-2",
+    "drugName": "Atorvastatin",
+    "genericName": "Atorvastatin Calcium",
+    "category": "HMG-CoA Reductase Inhibitor (Statin)",
+    "standardDosageRange": "10 mg - 80 mg once daily",
+    "commonInstructions": "Take at evening or bedtime.",
+    "conflictingDrugs": [
+      "Clarithromycin",
+      "Erythromycin",
+      "Cyclosporine",
+      "Grapefruit Juice"
+    ],
+    "contraindications": "Active liver disease, unexplained persistent elevations of hepatic transaminases."
+  },
+  {
+    "id": "ref-3",
+    "drugName": "Metformin",
+    "genericName": "Metformin Hydrochloride",
+    "category": "Biguanide Antidiabetic",
+    "standardDosageRange": "500 mg - 2000 mg daily in divided doses",
+    "commonInstructions": "Take with or immediately after meals to reduce GI adverse effects.",
+    "conflictingDrugs": [
+      "Iodinated Contrast Media",
+      "Furosemide",
+      "Cimetidine"
+    ],
+    "contraindications": "Severe renal impairment (eGFR < 30 mL/min), metabolic acidosis."
+  },
+  {
+    "id": "ref-4",
+    "drugName": "Vitamin D3",
+    "genericName": "Cholecalciferol",
+    "category": "Vitamin Supplement",
+    "standardDosageRange": "1000 IU daily or 60000 IU weekly",
+    "commonInstructions": "Take with milk or fatty meal for optimal absorption.",
+    "conflictingDrugs": [
+      "Thiazide Diuretics",
+      "Digoxin",
+      "Orlistat"
+    ],
+    "contraindications": "Hypercalcemia, hypervitaminosis D."
+  },
+  {
+    "id": "ref-5",
+    "drugName": "Clarithromycin",
+    "genericName": "Clarithromycin",
+    "category": "Macrolide Antibiotic",
+    "standardDosageRange": "250 mg - 500 mg twice daily",
+    "commonInstructions": "Complete full course of antibiotics.",
+    "conflictingDrugs": [
+      "Atorvastatin",
+      "Simvastatin",
+      "Colchicine",
+      "Pimozide"
+    ],
+    "contraindications": "History of QT prolongation, concurrent statin therapy."
+  },
+  {
+    "id": "ref-6",
+    "drugName": "Warfarin",
+    "genericName": "Warfarin Sodium",
+    "category": "Anticoagulant",
+    "standardDosageRange": "2 mg - 10 mg once daily as per INR",
+    "commonInstructions": "Take at the same time each evening. Avoid sudden dietary vitamin K changes.",
+    "conflictingDrugs": [
+      "Paracetamol (high dose)",
+      "Aspirin",
+      "Ibuprofen",
+      "Metronidazole"
+    ],
+    "contraindications": "Active bleeding, pregnancy, severe uncontrolled hypertension."
+  }
+]

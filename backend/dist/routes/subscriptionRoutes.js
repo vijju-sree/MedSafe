@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const subscriptionController_1 = require("../controllers/subscriptionController");
+const auth_1 = require("../middleware/auth");
+const rbac_1 = require("../middleware/rbac");
+const router = (0, express_1.Router)();
+router.get('/plans', subscriptionController_1.subscriptionController.getPlans);
+router.post('/plans', auth_1.authMiddleware, (0, rbac_1.requireRoles)('ADMIN'), subscriptionController_1.subscriptionController.createPlan);
+router.put('/plans/:id', auth_1.authMiddleware, (0, rbac_1.requireRoles)('ADMIN'), subscriptionController_1.subscriptionController.updatePlan);
+router.get('/my', auth_1.authMiddleware, subscriptionController_1.subscriptionController.getMySubscription);
+router.get('/patient/:patientId', auth_1.authMiddleware, subscriptionController_1.subscriptionController.getMySubscription);
+router.post('/subscribe', auth_1.authMiddleware, subscriptionController_1.subscriptionController.subscribe);
+exports.default = router;

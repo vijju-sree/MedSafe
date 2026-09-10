@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const reportController_1 = require("../controllers/reportController");
+const auth_1 = require("../middleware/auth");
+const audit_1 = require("../middleware/audit");
+const router = (0, express_1.Router)();
+router.post('/upload', auth_1.authMiddleware, (0, audit_1.logAudit)('REPORT_UPLOADED', 'MedicalReport'), reportController_1.reportController.uploadReport);
+router.get('/patient/:patientId', auth_1.authMiddleware, reportController_1.reportController.getPatientReports);
+router.get('/:id/download', auth_1.authMiddleware, (0, audit_1.logAudit)('REPORT_DOWNLOADED', 'MedicalReport'), reportController_1.reportController.downloadReport);
+router.get('/:id', auth_1.authMiddleware, reportController_1.reportController.getReportById);
+router.get('/', auth_1.authMiddleware, reportController_1.reportController.getAllReports);
+exports.default = router;

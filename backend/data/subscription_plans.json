@@ -1,0 +1,109 @@
+[
+  {
+    "id": "plan-free",
+    "planId": "PLAN_FREE",
+    "planName": "Free Patient Plan",
+    "customerType": "PATIENT",
+    "price": 0,
+    "billingCycle": "MONTHLY",
+    "description": "Essential medication adherence tracking and daily reminder alerts.",
+    "features": [
+      "Daily Medication Reminders",
+      "Intake Schedule Tracking & Logging",
+      "Adherence Compliance Scoring",
+      "Single Connected Physician"
+    ],
+    "usageLimits": {
+      "maxPrescriptionsPerMonth": 5,
+      "maxReportsPerMonth": 5,
+      "maxNotificationsPerMonth": 50
+    },
+    "active": true,
+    "createdAt": "2026-09-10T19:26:39.207Z",
+    "updatedAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "plan-patient-premium",
+    "planId": "PLAN_PATIENT_PREMIUM",
+    "planName": "Premium Patient Care",
+    "customerType": "PATIENT",
+    "price": 299,
+    "billingCycle": "MONTHLY",
+    "description": "Comprehensive patient healthcare coordination with caretaker sharing, automated refill requests, and diagnostic reports.",
+    "features": [
+      "All Free Plan Features",
+      "Delegated Caretaker Access & Monitoring",
+      "Instant Pharmacy Refill Requests",
+      "Unlimited Diagnostic Lab Reports",
+      "Comprehensive Medical History Timeline",
+      "Priority Safety Intelligence Advisories"
+    ],
+    "usageLimits": {
+      "maxPrescriptionsPerMonth": 50,
+      "maxReportsPerMonth": 100,
+      "maxNotificationsPerMonth": 500
+    },
+    "active": true,
+    "createdAt": "2026-09-10T19:26:39.207Z",
+    "updatedAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "plan-family-plus",
+    "planId": "PLAN_FAMILY_PLUS",
+    "planName": "Family Plus",
+    "customerType": "PATIENT",
+    "price": 499,
+    "billingCycle": "MONTHLY",
+    "description": "Comprehensive healthcare coverage for up to 5 family members under a single primary subscription.",
+    "features": [
+      "Up to 5 Family Members Included",
+      "All Premium Patient Care Features",
+      "Shared Caretaker & Emergency Directives",
+      "Instant Pharmacy Refill Requests",
+      "Unlimited Diagnostic Lab Reports",
+      "Comprehensive Medical History Timelines"
+    ],
+    "usageLimits": {
+      "maxPatients": 5,
+      "maxPrescriptionsPerMonth": 100,
+      "maxReportsPerMonth": 200,
+      "maxNotificationsPerMonth": 1000
+    },
+    "active": true,
+    "createdAt": "2026-09-10T19:26:39.207Z",
+    "updatedAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "plan-clinic-org",
+    "planId": "PLAN_CLINIC_ORG",
+    "planName": "Clinic / Organization Enterprise Plan",
+    "customerType": "ORGANIZATION",
+    "price": 4999,
+    "billingCycle": "MONTHLY",
+    "description": "Institutional license for clinics, hospitals, and diagnostic centers with multi-clinician coordination and licensing governance.",
+    "features": [
+      "Up to 50 Staff / Clinician Accounts",
+      "Up to 1000 Active Patients",
+      "Diagnostic Test & Report Pipeline",
+      "Itemized Service Billing & Sandbox Payments",
+      "ABDM-Compliant Consent & Audit Logs",
+      "Automated Low-Supply Refill Alerts"
+    ],
+    "usageLimits": {
+      "maxPatients": 1000,
+      "maxStaff": 50,
+      "maxPrescriptionsPerMonth": 2000,
+      "maxTestOrdersPerMonth": 1000,
+      "maxReportsPerMonth": 1000,
+      "maxNotificationsPerMonth": 10000
+    },
+    "overagePricing": {
+      "extraPatientPrice": 10,
+      "extraTestOrderPrice": 15,
+      "extraNotificationPrice": 1
+    },
+    "active": true,
+    "createdAt": "2026-09-10T19:26:39.207Z",
+    "updatedAt": "2026-09-10T19:26:39.207Z"
+  }
+]

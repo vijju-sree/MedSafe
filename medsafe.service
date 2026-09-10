@@ -1,0 +1,26 @@
+[Unit]
+Description=MedSafe Production Flask + SQLite Application Service
+After=network.target
+
+[Service]
+Type=notify
+User=medsafe
+Group=medsafe
+WorkingDirectory=/opt/medsafe/flask_backend
+EnvironmentFile=/opt/medsafe/flask_backend/.env
+ExecStart=/opt/medsafe/flask_backend/venv/bin/gunicorn --config gunicorn.conf.py app:app
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=15
+Restart=on-failure
+RestartSec=5s
+LimitNOFILE=65536
+
+# Security Sandboxing
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

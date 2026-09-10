@@ -1,0 +1,22 @@
+[
+  {
+    "id": "phr-1",
+    "relationshipId": "REL-HOSP-10001",
+    "patientId": "PAT10001",
+    "hospitalId": "HOSP-00125",
+    "hospitalName": "ABC Hospital",
+    "receptionistId": "REC-0018",
+    "status": "ACTIVE",
+    "createdAt": "2026-07-12"
+  },
+  {
+    "id": "phr-acdf9834",
+    "relationshipId": "REL-HOSP-1789068399783",
+    "patientId": "PAT10002",
+    "hospitalId": "HOSP-00125",
+    "hospitalName": "ABC Hospital",
+    "receptionistId": "REC-0018",
+    "status": "ACTIVE",
+    "createdAt": "2026-09-10T19:26:39.783Z"
+  }
+]

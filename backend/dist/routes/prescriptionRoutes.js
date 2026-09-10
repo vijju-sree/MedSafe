@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const prescriptionController_1 = require("../controllers/prescriptionController");
+const auth_1 = require("../middleware/auth");
+const rbac_1 = require("../middleware/rbac");
+const audit_1 = require("../middleware/audit");
+const router = (0, express_1.Router)();
+router.use(auth_1.authMiddleware);
+router.get('/patient/:patientId', prescriptionController_1.prescriptionController.getPrescriptions);
+router.post('/', (0, rbac_1.requireRoles)('DOCTOR', 'ADMIN'), (0, audit_1.logAudit)('PRESCRIPTION_ISSUED', 'Prescription'), prescriptionController_1.prescriptionController.createPrescription);
+router.put('/:id/renew', (0, rbac_1.requireRoles)('DOCTOR', 'ADMIN'), (0, audit_1.logAudit)('PRESCRIPTION_RENEWED', 'Prescription'), prescriptionController_1.prescriptionController.renewPrescription);
+exports.default = router;

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "lic-1",
+    "licenseId": "LIC10001",
+    "organizationId": "org-1",
+    "organizationName": "Apollo Health Center",
+    "organizationType": "HOSPITAL",
+    "planId": "PLAN_CLINIC_ORG",
+    "planName": "Clinic / Organization Enterprise Plan",
+    "licenseStartDate": "2026-07-12",
+    "licenseEndDate": "2027-07-12",
+    "status": "ACTIVE",
+    "userLimit": 50,
+    "patientLimit": 1000,
+    "featuresEnabled": [
+      "CLINICAL_PORTAL",
+      "DIAGNOSTIC_ORDERS",
+      "PRESCRIPTION_MANAGEMENT",
+      "ITEMIZED_BILLING",
+      "AUDIT_LOGGING"
+    ],
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-09-10T19:42:37.690Z"
+  },
+  {
+    "id": "lic-2",
+    "licenseId": "LIC10002",
+    "organizationId": "org-2",
+    "organizationName": "Care Clinic East",
+    "organizationType": "CLINIC",
+    "planId": "PLAN_CLINIC_ORG",
+    "planName": "Clinic / Organization Enterprise Plan",
+    "licenseStartDate": "2025-09-25",
+    "licenseEndDate": "2026-09-25",
+    "status": "EXPIRING_SOON",
+    "userLimit": 15,
+    "patientLimit": 300,
+    "featuresEnabled": [
+      "CLINICAL_PORTAL",
+      "PRESCRIPTION_MANAGEMENT",
+      "ITEMIZED_BILLING"
+    ],
+    "createdAt": "2025-09-25",
+    "updatedAt": "2025-09-25"
+  },
+  {
+    "id": "lic-3",
+    "licenseId": "LIC10003",
+    "organizationId": "LAB10001",
+    "organizationName": "Apex Diagnostic Center & Imaging",
+    "organizationType": "LAB",
+    "planId": "PLAN_CLINIC_ORG",
+    "planName": "Diagnostic Partner License",
+    "licenseStartDate": "2026-05-13",
+    "licenseEndDate": "2027-05-13",
+    "status": "ACTIVE",
+    "userLimit": 20,
+    "patientLimit": 500,
+    "featuresEnabled": [
+      "DIAGNOSTIC_ORDERS",
+      "REPORT_PUBLISHING",
+      "LAB_BILLING"
+    ],
+    "createdAt": "2026-05-13",
+    "updatedAt": "2026-09-10T19:26:39.207Z"
+  }
+]

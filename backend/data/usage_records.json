@@ -1,0 +1,92 @@
+[
+  {
+    "id": "usg-1",
+    "organizationId": "org-1",
+    "organizationName": "Apollo Health Center",
+    "usageType": "ACTIVE_PATIENTS",
+    "quantity": 240,
+    "includedQuantity": 1000,
+    "billableQuantity": 0,
+    "billingPeriod": "2026-09",
+    "unitPrice": 10,
+    "totalAmount": 0,
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "usg-2",
+    "organizationId": "org-1",
+    "organizationName": "Apollo Health Center",
+    "usageType": "STAFF_ACCOUNTS",
+    "quantity": 18,
+    "includedQuantity": 50,
+    "billableQuantity": 0,
+    "billingPeriod": "2026-09",
+    "unitPrice": 50,
+    "totalAmount": 0,
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "usg-3",
+    "organizationId": "org-1",
+    "organizationName": "Apollo Health Center",
+    "usageType": "PRESCRIPTIONS",
+    "quantity": 480,
+    "includedQuantity": 2000,
+    "billableQuantity": 0,
+    "billingPeriod": "2026-09",
+    "unitPrice": 5,
+    "totalAmount": 0,
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "usg-4",
+    "organizationId": "org-1",
+    "organizationName": "Apollo Health Center",
+    "usageType": "TEST_ORDERS",
+    "quantity": 120,
+    "includedQuantity": 1000,
+    "billableQuantity": 0,
+    "billingPeriod": "2026-09",
+    "unitPrice": 15,
+    "totalAmount": 0,
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "usg-5",
+    "organizationId": "org-1",
+    "organizationName": "Apollo Health Center",
+    "usageType": "REPORTS",
+    "quantity": 115,
+    "includedQuantity": 1000,
+    "billableQuantity": 0,
+    "billingPeriod": "2026-09",
+    "unitPrice": 10,
+    "totalAmount": 0,
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "usg-6",
+    "organizationId": "org-1",
+    "organizationName": "Apollo Health Center",
+    "usageType": "NOTIFICATIONS",
+    "quantity": 1240,
+    "includedQuantity": 10000,
+    "billableQuantity": 0,
+    "billingPeriod": "2026-09",
+    "unitPrice": 1,
+    "totalAmount": 0,
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "usg-22c2aa56",
+    "organizationId": "org-1",
+    "organizationName": "Apollo Health Center",
+    "quantity": 0,
+    "includedQuantity": 0,
+    "billableQuantity": 0,
+    "billingPeriod": "2026-09",
+    "unitPrice": 0,
+    "totalAmount": 0,
+    "createdAt": "2026-09-10T19:26:53.947Z"
+  }
+]

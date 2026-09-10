@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const refillController_1 = require("../controllers/refillController");
+const auth_1 = require("../middleware/auth");
+const rbac_1 = require("../middleware/rbac");
+const router = (0, express_1.Router)();
+router.get('/', auth_1.authMiddleware, refillController_1.refillController.getAllRefills);
+router.get('/:id', auth_1.authMiddleware, refillController_1.refillController.getRefillById);
+router.put('/:id/status', auth_1.authMiddleware, (0, rbac_1.requireRoles)('DOCTOR', 'PHARMACIST', 'ADMIN', 'CLINIC'), refillController_1.refillController.updateRefillStatus);
+exports.default = router;

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const caregiverController_1 = require("../controllers/caregiverController");
+const auth_1 = require("../middleware/auth");
+const rbac_1 = require("../middleware/rbac");
+const router = (0, express_1.Router)();
+router.use(auth_1.authMiddleware);
+router.use((0, rbac_1.requireRoles)('CAREGIVER', 'ADMIN'));
+router.get('/patients', caregiverController_1.caregiverController.getAuthorizedPatients);
+router.get('/patients/:patientId', caregiverController_1.caregiverController.getPatientOverview);
+exports.default = router;

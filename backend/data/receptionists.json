@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rec-1",
+    "receptionistId": "REC-0018",
+    "userId": "usr-rec-1",
+    "name": "Priya Sharma",
+    "email": "receptionist.abc@medsafe.local",
+    "phone": "+91 98765 11111",
+    "hospitalId": "HOSP-00125",
+    "hospitalName": "ABC Hospital",
+    "status": "ACTIVE",
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "rec-2",
+    "receptionistId": "REC-0091",
+    "userId": "usr-rec-2",
+    "name": "Anil Verma",
+    "email": "receptionist.xyz@medsafe.local",
+    "phone": "+91 98765 22222",
+    "hospitalId": "HOSP-00482",
+    "hospitalName": "XYZ Hospital",
+    "status": "ACTIVE",
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  }
+]

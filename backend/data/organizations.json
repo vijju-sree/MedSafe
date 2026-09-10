@@ -1,0 +1,28 @@
+[
+  {
+    "id": "org-1",
+    "hospitalId": "HOSP-00125",
+    "name": "ABC Hospital",
+    "type": "HOSPITAL",
+    "address": "Jubilee Hills, Road No. 36, Hyderabad",
+    "phone": "+91 40 2360 7777",
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "org-2",
+    "hospitalId": "HOSP-00482",
+    "name": "XYZ Hospital",
+    "type": "HOSPITAL",
+    "address": "East City Hub, Gachibowli, Hyderabad",
+    "phone": "+91 40 4455 6677",
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  },
+  {
+    "id": "org-3",
+    "name": "Apollo Med Pharmacy #4",
+    "type": "PHARMACY",
+    "address": "Commercial Block B, Madhapur, Hyderabad",
+    "phone": "+91 40 8899 0011",
+    "createdAt": "2026-09-10T19:26:39.207Z"
+  }
+]

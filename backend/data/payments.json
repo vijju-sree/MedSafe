@@ -1,0 +1,215 @@
+[
+  {
+    "id": "pay-1",
+    "paymentId": "PAY10001",
+    "billId": "BIL10001",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "amount": 473,
+    "currency": "INR",
+    "paymentMethod": "UPI",
+    "transactionRef": "TXN-MEDSAFE-98A1B2C-7741",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-01T14:30:00Z",
+    "receiptNumber": "RCP10001",
+    "payerDetails": {
+      "name": "Anjali Sharma",
+      "email": "anjali@medsafe.local",
+      "phone": "+91 98765 43210",
+      "upiId": "anjali@okaxis"
+    }
+  },
+  {
+    "id": "pay-d32ffba0",
+    "paymentId": "SPAY-404321",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "amount": 299,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789068404309_sub1",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:26:44.311Z",
+    "receiptNumber": "RCP-SPAY-404321",
+    "payerDetails": {
+      "name": "Anjali Sharma",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-682620c3",
+    "paymentId": "SPAY-404341",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "amount": 499,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789068404333_fam",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:26:44.335Z",
+    "receiptNumber": "RCP-SPAY-404341",
+    "payerDetails": {
+      "name": "Anjali Sharma",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-da59f6f6",
+    "paymentId": "BPAY-404361",
+    "billId": "BIL10003",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "amount": 683,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789068404355_bill",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:26:44.358Z",
+    "receiptNumber": "RCP-BPAY-404361",
+    "payerDetails": {
+      "name": "Anjali Sharma",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-f06451f9",
+    "paymentId": "OPAY-404378",
+    "organizationId": "org-1",
+    "patientName": "Apollo Health Center",
+    "amount": 4999,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789068404374_orglic",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:26:44.376Z",
+    "receiptNumber": "RCP-OPAY-404378",
+    "payerDetails": {
+      "name": "Apollo Health Center",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-04eae39c",
+    "paymentId": "OPAY-404391",
+    "organizationId": "org-1",
+    "patientName": "Apollo Health Center",
+    "amount": 10,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789068404388_orgusage",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:26:44.390Z",
+    "receiptNumber": "RCP-OPAY-404391",
+    "payerDetails": {
+      "name": "Apollo Health Center",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-f1894705",
+    "paymentId": "SPAY-357633",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "amount": 299,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789069357621_sub1",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:42:37.623Z",
+    "receiptNumber": "RCP-SPAY-357633",
+    "payerDetails": {
+      "name": "Anjali Sharma",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-db1ff797",
+    "paymentId": "SPAY-357656",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "amount": 499,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789069357646_fam",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:42:37.648Z",
+    "receiptNumber": "RCP-SPAY-357656",
+    "payerDetails": {
+      "name": "Anjali Sharma",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-ebbbd228",
+    "paymentId": "BPAY-357674",
+    "billId": "BIL10002",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "amount": 788,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789069357669_bill",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:42:37.671Z",
+    "receiptNumber": "RCP-BPAY-357674",
+    "payerDetails": {
+      "name": "Anjali Sharma",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-33eaa64f",
+    "paymentId": "OPAY-357692",
+    "organizationId": "org-1",
+    "patientName": "Apollo Health Center",
+    "amount": 4999,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789069357687_orglic",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:42:37.690Z",
+    "receiptNumber": "RCP-OPAY-357692",
+    "payerDetails": {
+      "name": "Apollo Health Center",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  },
+  {
+    "id": "pay-b11cda40",
+    "paymentId": "OPAY-357707",
+    "organizationId": "org-1",
+    "patientName": "Apollo Health Center",
+    "amount": 10,
+    "currency": "INR",
+    "paymentMethod": "Razorpay",
+    "transactionRef": "pay_test_1789069357704_orgusage",
+    "paymentStatus": "SUCCESS",
+    "gatewayMode": "SANDBOX",
+    "paidAt": "2026-09-10T19:42:37.706Z",
+    "receiptNumber": "RCP-OPAY-357707",
+    "payerDetails": {
+      "name": "Apollo Health Center",
+      "email": "anjali@medsafe.local",
+      "phone": ""
+    }
+  }
+]
